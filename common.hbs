@@ -4,13 +4,17 @@
 	<meta charset="utf-8">
 	<title>{{meta_title}}</title>
 
-	<link rel="stylesheet" media="screen" href="//csszengarden.com/214/214.css?v=8may2013">
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dave Shea">
 	<meta name="description" content="{{meta_description}}">
 	<meta name="robots" content="all">
+
+	<link rel="stylesheet" media="screen" href="//csszengarden.com/214/214.css?v=8may2013">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
+	{{ghost_head}} 
+	{{! TODO: set href="//csszengarden.com/214/214.css?v=8may2013" stylesheet via ghost code injection}}
+	{{! TODO: add csszengarden as git submodule into assets, link css from there}}
+
 
 
 	<!--[if lt IE 9]>
@@ -215,6 +219,6 @@
 -->
 <div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
 <div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
-
+{{ghost_foot}}
 </body>
 </html>
