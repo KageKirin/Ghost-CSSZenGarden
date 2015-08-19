@@ -1,0 +1,23 @@
+<nav role="navigation">
+	<ul>
+		{{#if next}}
+		<li class="next">
+			<a href="{{page_url next}}">
+				Next Posts<span class="indicator">&rsaquo;</span>
+			</a>
+		</li>
+		{{/if}}
+		<li class="viewall">
+			<a href="{{@blog.url}}">
+				Page {{page}} of {{pages}}
+			</a>
+		</li>
+		{{#if prev}}
+		<li class="next">
+			<a href="{{page_url prev}}">
+				Previous Posts<span class="indicator">&lsaquo;</span>
+			</a>
+		</li>
+		{{/if}}
+	</ul>
+</nav>

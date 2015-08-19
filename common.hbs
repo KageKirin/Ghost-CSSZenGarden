@@ -100,34 +100,14 @@
 				{{navigation}}
 			</div>
 
-			{{! TODO: move to pagination.hbs}}
+			{{! pagination}}
 			<div class="design-archives" id="design-archives">
 				<h3 class="archives">Archives:</h3>
-				<nav role="navigation">
-					<ul>
-						{{#if next}}
-						<li class="next">
-							<a href="{{page_url next}}">
-								Next Posts<span class="indicator">&rsaquo;</span>
-							</a>
-						</li>
-						{{/if}}
-						<li class="viewall">
-							{{! link home}}
-							<a href="{{@blog.url}}">
-								Page {{page}} of {{pages}}
-							</a>
-						</li>
-						{{#if prev}}
-						<li class="next">
-							<a href="{{page_url prev}}">
-								Previous Posts<span class="indicator">&rsaquo;</span>
-							</a>
-						</li>
-						{{/if}}
-						prev
-					</ul>
-				</nav>
+				{{#is "page, post"}}
+				{{> post-pagination}}
+				{{else}}
+				{{pagination}}
+				{{/is}}
 			</div>
 
 			{{! customize to your own gusto}}

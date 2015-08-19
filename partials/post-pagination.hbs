@@ -1,0 +1,21 @@
+{{#post}}
+<nav role="navigation">
+	<ul>
+		{{#prev_post}}
+		<li class="next">
+			<a href="{{url}}">
+				Next Posts<span class="indicator">&rsaquo;</span>
+			</a>
+		</li>
+		{{/prev_post}}
+
+		{{#next_post}}
+		<li class="viewall">
+			<a href="{{url}}">
+				{{title}}
+			</a>
+		</li>
+		{{/next_post}}
+	</ul>
+</nav>
+{{/post}}
