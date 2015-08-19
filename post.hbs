@@ -1,1 +1,34 @@
 {{!< common}}
+
+{{!--
+<div class="explanation" id="zen-explanation" role="article">
+	<h3>{{title}}</h3>
+	<p>{{excerpt words="200"}}</p>
+</div>
+--}}
+
+{{#post}}
+<div class="participation" id="zen-participation" role="article">
+	<h3>{{title}}</h3>
+	{{content}}
+</div>
+
+
+{{!--
+<div class="benefits" id="zen-benefits" role="article">
+	<h3>{{title}}</h3>
+	<p>{{excerpt words="200"}}</p>
+</div>
+--}}
+
+{{#author}}
+<div class="requirements" id="zen-requirements" role="article">
+	<h3>About {{name}}</h3>
+	<p>{{bio}}</p>
+	<p role="contentinfo">By {{name}}.
+		Hosted on (e.g.) <a href="http://www.mediatemple.net/">mediatemple</a>.
+		More from this author at <a href="{{url}}">his site</a>.
+	</p>
+</div>
+{{/author}}
+{{/post}}

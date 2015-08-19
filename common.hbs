@@ -78,43 +78,7 @@
 	</section>
 
 	<div class="main supporting" id="zen-supporting" role="main">
-
-		{{#foreach posts}}
-		{{#if @first}}
-		<div class="explanation" id="zen-explanation" role="article">
-			<h3>{{title}}</h3>
-			<p>{{excerpt words="200"}}</p>
-		</div>
-
-		{{else}}
-		{{#if @odd}}
-		<div class="participation" id="zen-participation" role="article">
-			<h3>{{title}}</h3>
-			<p>{{excerpt words="200"}}</p>
-		</div>
-		{{/if}} {{! @odd}}
-
-		{{#if @even}}
-		<div class="benefits" id="zen-benefits" role="article">
-			<h3>{{title}}</h3>
-			<p>{{excerpt words="200"}}</p>
-		</div>
-		{{/if}} {{! @even}}
-		{{/if}} {{! @first.else}}
-		{{/foreach}}
-
-		{{#foreach posts}}
-		{{#if @first}}
-		<div class="requirements" id="zen-requirements" role="article">
-			<h3>About {{author.name}}</h3>
-			<p>{{author.bio}}</p>
-			<p role="contentinfo">By {{author}}.
-				Hosted on (e.g.) <a href="http://www.mediatemple.net/">mediatemple</a>.
-				More from this author at <a href="{{author.url}}">his site</a>.
-			</p>
-		</div>
-		{{/if}}
-		{{/foreach}}
+		{{{body}}}
 
 		{{! TODO customize}}
 		<footer>
