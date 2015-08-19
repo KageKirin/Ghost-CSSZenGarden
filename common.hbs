@@ -97,15 +97,7 @@
 
 			<div class="design-selection" id="design-selection">
 				<h3 class="select">Select a Page:</h3>
-				<nav role="navigation">
-					<ul>
-						{{#foreach @blog.navigation}}
-						<li>
-							<a href="{{url absolute="true"}}" class="design-name">{{label}}</a> {{! by						<a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a> }}
-						</li>
-						{{/foreach}}
-					</ul>
-				</nav>
+				{{navigation}}
 			</div>
 
 			{{! TODO: move to pagination.hbs}}
