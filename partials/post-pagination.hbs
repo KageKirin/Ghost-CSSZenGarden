@@ -1,21 +1,28 @@
 {{#post}}
 <nav role="navigation">
 	<ul>
-		{{#prev_post}}
+		{{#next_post}}
 		<li class="next">
 			<a href="{{url}}">
-				Next Posts<span class="indicator">&rsaquo;</span>
+				Next Post<span class="indicator">&rsaquo;</span>
+			</a>
+		</li>
+		{{/next_post}}
+
+		{{#prev_post}}
+		<li class="previous">
+			<a href="{{url}}">
+				<span class="indicator">&lsaquo;</span>Previous Post
 			</a>
 		</li>
 		{{/prev_post}}
 
-		{{#next_post}}
 		<li class="viewall">
-			<a href="{{url}}">
-				{{title}}
+			<a href="{{author.url}}">
+				{{author}}
 			</a>
 		</li>
-		{{/next_post}}
+
 	</ul>
 </nav>
 {{/post}}

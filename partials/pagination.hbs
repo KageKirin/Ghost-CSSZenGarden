@@ -7,17 +7,17 @@
 			</a>
 		</li>
 		{{/if}}
+		{{#if prev}}
+		<li class="previous">
+			<a href="{{page_url prev}}">
+				<span class="indicator">&lsaquo;</span>Previous Posts
+			</a>
+		</li>
+		{{/if}}
 		<li class="viewall">
 			<a href="{{@blog.url}}">
 				Page {{page}} of {{pages}}
 			</a>
 		</li>
-		{{#if prev}}
-		<li class="next">
-			<a href="{{page_url prev}}">
-				Previous Posts<span class="indicator">&lsaquo;</span>
-			</a>
-		</li>
-		{{/if}}
 	</ul>
 </nav>
